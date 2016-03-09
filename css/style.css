@@ -3,7 +3,7 @@
     src: url('../fonts/Ukrainian-MonoCondensed.ttf'); /* Путь к файлу со шрифтом */
 }
 
-body{font-family:Ukrainian-MonoCondensed;}
+body{font-family:Ukrainian-MonoCondensed;background: #F7F7F7;}
 /* шапка */
 
 header{background-color: #00a0c6;}
@@ -71,6 +71,20 @@ span.amenities-price{font-size: 14px;}
 .about-us{margin-top: 90px;}
 .about-us h2{margin-bottom: 25px;}
 .about-us span{display: block;font-family:verdana;font-size: 12px;text-shadow: 0px 0px 1px #aaa;}
+.about-us-manager div:last-child{margin-top: 81px;}
+
+/* Портфолио */
+
+.portfolio{margin-top: 80px;}
+.portfolio .portfolio-img h2{margin-bottom: 30px;}
+.portfolio-text h2{color:#515151;font-family:verdana;}
+.portfolio-text span{display: block;font-family:verdana; font-size: 14px;font-style:italic;text-shadow: 0px 0px 1px #aaa;}
+.portfolio-text a{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 13px 0;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
+.portfolio-text a:hover{background: #000;}
+.portfolio-row{margin-top: 30px;}
+.portfolio-row .portfolio-text h2{margin-top:0px;}
+.portfolio-row:first-child .portfolio-text h2{margin-top:80px;}
+.portfolio-row:first-child{margin-top: 0;}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -79,8 +93,9 @@ span.amenities-price{font-size: 14px;}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.carousel-head-text div:last-child{text-align: left;}
+	.carousel-head-text div:last-child,.about-us div:last-child{text-align: left;}
     .amenities h2{font-size: 30px;}
+    .portfolio-text h2{margin-top: 20px !important;}
 }
 
 /* Small Devices, Tablets */
