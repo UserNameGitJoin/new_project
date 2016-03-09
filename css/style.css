@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Ukrainian-MonoCondensed'; /* Гарнитура шрифта */
+    src: url('../fonts/Ukrainian-MonoCondensed.ttf'); /* Путь к файлу со шрифтом */
+}
+
+body{font-family:Ukrainian-MonoCondensed;}
+/* шапка */
+
+header{background-color: #00a0c6;}
+/*меню */
+.menu{border: 0;padding:15px 0 10px;} /*border-bottom: 1px solid #6cc8dd*/
+.navbar-brand img{position: relative;top: -20px;}
+.navbar-default{background: transparent;}
+.navbar-default .navbar-nav > li > a{color: #fff;text-transform: uppercase;font-size: 18px;}
+.link-active{background: #00809E;}
+.navbar-nav > li > a{padding: 30px;}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{background: #000;color: #fff;}
+.navbar-default .navbar-toggle .icon-bar{background-color: #fff;}
+/*.navbar-collapse{margin-top: 37px;}*/ /* Отступ в меню маленьком */
+.navbar-toggle{margin-top: 20px;}
+/* /меню */
+
+/* Слайдер */
+
+.carousel .item{min-height: 500px;}
+.carousel .bgslid{position: absolute;top: 0;left:0;height: 100%;width: 100%;background-size: cover;background-position: center center;}
+.carousel-indicat{position: absolute;bottom: -46px;width: 100%;background: #8fcedd;height: 46px;z-index: 3;}
+.carousel-indicat .carousel-indicators{bottom: 0;}
+.carousel-indicat .carousel-indicators li{background: #80adb7;border: none;width: 9px; height: 9px; margin: 0 3px;}
+.carousel-indicat .carousel-indicators li.active{background: #fff;}
+.carousel-shadow{width: 100%;height: 1px;position: absolute;bottom: -1px;background: #7eb9c8;}
+.carousel-border{width: 100%;height: 6px;position: absolute;bottom: -7px;background: #82c1cf;}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
