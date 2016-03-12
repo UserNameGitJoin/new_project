@@ -1,9 +1,16 @@
+/*@font-face {
+    font-family: 'UkrainianMyslBoldItalic'; /* Гарнитура шрифта */
+  /*  src: url('../fonts/UkrainianMyslBoldItalic.ttf'); /* Путь к файлу со шрифтом */
+/*}
+*/
 @font-face {
-    font-family: 'Ukrainian-MonoCondensed'; /* Гарнитура шрифта */
-    src: url('../fonts/Ukrainian-MonoCondensed.ttf'); /* Путь к файлу со шрифтом */
+  font-family: 'UkrainianMonoCondensed';
+  src: url('UkrainianMonoCondensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-body{font-family:Ukrainian-MonoCondensed;background: #F7F7F7;}
+body{font-family:UkrainianMonoCondensed;background: #F7F7F7;}
 /* шапка */
 
 header{background-color: #00a0c6;}
@@ -59,7 +66,7 @@ header{background-color: #00a0c6;}
 .amenities h2{background: #000;text-transform: uppercase;text-align: center;color: #fff;margin: 0;border-bottom: 5px solid #00A0C6;font-size: 26px;height: 131px;display: table;width: 100%;line-height:1.5;}
 .amenities h2 span{display: table-cell;vertical-align: middle;}
 .amenities img{margin-top: 15px;margin-bottom: 15px; height: auto;}
-.amenities .amenities-bg > span{display: block;font-family:verdana; font-size: 12px;font-style:italic;text-shadow: 0px 0px 1px #aaa;}
+.amenities .amenities-bg > span{display: block;font-family:verdanahandRegular; font-size: 12px;font-style:italic;text-shadow: 0px 0px 1px #aaa;}
 .amenities-bg{background: #EFEFEF;}
 .amenities hr{border-color: #e0dedd;width: 60%;margin-bottom: 5px; }
 span.amenities-price{font-size: 14px;}
@@ -86,6 +93,19 @@ span.amenities-price{font-size: 14px;}
 .portfolio-row:first-child .portfolio-text h2{margin-top:80px;}
 .portfolio-row:first-child{margin-top: 0;}
 
+
+/* Контакты */
+
+.contact{background-image: url(../img/bgcont.png);width: 100%;background-size: cover;background-position: center center;margin-top: 70px;padding-top: 13px;color:#fff;padding-bottom: 15px;}
+.contact h2{padding-bottom: 25px;}
+.section-form form > div{padding-left: 0;}
+.section-form button{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 13px 0;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
+.section-form button:hover{background: #000;}
+.contact span {font-size: 24px;}
+.contact-img img{margin: 15px 5px}
+.contact-img img:first-child{margin-right: 45px;}
+.contact-img img:last-child{margin-right: 0;}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.amenities h2{font-size: 21px;}
@@ -96,6 +116,7 @@ span.amenities-price{font-size: 14px;}
 	.carousel-head-text div:last-child,.about-us div:last-child{text-align: left;}
     .amenities h2{font-size: 30px;}
     .portfolio-text h2{margin-top: 20px !important;}
+    .contact div{text-align: left;}
 }
 
 /* Small Devices, Tablets */
