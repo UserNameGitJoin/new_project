@@ -54,7 +54,7 @@
                      <h1>СОЗДАНИЕ И ПРОДВИЖЕНИЕ САЙТОВ</h1>
                      <h2>г. Рязань</h2>
                  </div>
-                 <div class="col-md-3 col-md-offset-4 text-right">
+                 <div class="col-md-3 col-md-offset-4 text-right text-md-center">
                      <h2><span class="glyphicon glyphicon-earphone"></span>7 (4912) 51 01 36</h2>
                      <img src="img/phone.png" alt="">
                  </div>
@@ -381,12 +381,39 @@
         </div>
     </section>
     <section class="scrol-up">
-        
+        <div class="container-fluid">
+            <div class="row">
+                <hr>
+                <img id="scrollup" src="img/scrol.png" alt="scrol">
+            </div>
+        </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center">
+                   <span>SPACEMEN Studio</span>
+                <span>Создание и продвижение сайтов</span>
+                   <span>2016</span>
+            </div>
+        </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>      
+        window.onload = function() { // после загрузки страницы
+        var scrollUp = document.getElementById('scrollup'); // найти элемент
+        scrollUp.onclick = function() { //обработка клика
+          // window.scrollTo(0,0);            
+            function scrollUp() {
+              window.scrollBy(0,-100); // чем меньше значение (цифра -10), тем выше скорость перемещения
+              if (window.pageYOffset > 0) {requestAnimationFrame(scrollUp);} // если значение прокрутки больше нуля, то функция повториться
+            }
+            scrollUp();
+        };
+        };
+    </script>
     
 </body>
 </html>
