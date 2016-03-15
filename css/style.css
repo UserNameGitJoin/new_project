@@ -55,6 +55,7 @@ header{background-color: #00a0c6;}
 .menu-down .navbar-nav > li > a{padding:11px;}
 .menu-down .navbar-nav > li{background:#00A0C6;}
 .menu-down .navbar-nav > li.link-active{background: #00809e; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{background: #00809e;color:#fff;}
 .menu-down .menu{padding: 5px 0;}
 .menu-down .navbar-toggle{margin-top:4px;}
 .menu-down .carousel-shadow{width: 100%;height: 1px;position: absolute;bottom: -1px;background: #66c6dd;}
@@ -86,7 +87,7 @@ span.amenities-price{font-size: 14px;}
 .portfolio .portfolio-img h2{margin-bottom: 30px;}
 .portfolio-text h2{color:#515151;font-family:verdana;}
 .portfolio-text span{display: block;font-family:verdana; font-size: 14px;font-style:italic;text-shadow: 0px 0px 1px #aaa;}
-.portfolio-text a{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 13px 0;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
+.portfolio-text a{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 32px 0 10px;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
 .portfolio-text a:hover{background: #000;}
 .portfolio-row{margin-top: 30px;}
 .portfolio-row .portfolio-text h2{margin-top:0px;}
@@ -109,15 +110,19 @@ span.amenities-price{font-size: 14px;}
 
 /* Скрол */
 
-.scrol-up{position: relative;padding: 25px 0;}
+.scrol-up{position: relative;padding: 15px 0 12px;}
 .scrol-up hr{border-width: 2px 0 0;}
-.scrol-up img{position: absolute;top: 27px;left: 47%;cursor: pointer;}
+.scrol-up img{position: absolute;top: 16px;left: 47%;cursor: pointer;}
 
 /* footer */
 
 .footer{background-image: url(../img/bg-footer.png);width: 100%;background-size: cover;background-position: center center;color: #000;padding: 10px 0;border-top: 20px solid #000;}
 .footer span{display: block;font-size: 18px;}
 .footer span:first-child{font-size: 24px;}
+
+/* фиксация меню */
+.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;}
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -135,6 +140,7 @@ span.amenities-price{font-size: 14px;}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    header .menu .navbar-brand img{width: 140px;height: auto;}
     
 }
 
