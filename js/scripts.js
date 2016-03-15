@@ -14,7 +14,9 @@ window.onload = function() { // после загрузки страницы
           var docscroll=$(document).scrollTop();
           if(docscroll>rrr.top){
             $('.menu-down').css({'height': $('.menu-down').height(),'width': $('.menu-down').width('100%')}).addClass('fixed');
+             $(".menu-down").animate({opacity: "show"}, 1000);
           }else{
             $('.menu-down').removeClass('fixed');
+              $(".menu-down").animate({opacity: "hide"}, 1000);
           }
         });

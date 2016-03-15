@@ -49,7 +49,8 @@ header{background-color: #00a0c6;}
 
 /* Основное меню */
 
-.menu-down{margin-top: 60px; background: #00A0C6;height: 52px;box-shadow: 0 5px 9px 1px #000;position: relative;z-index: 9999999;display: none;}
+/*.menu-down{margin-top: 60px; background: #00A0C6;height: 52px;box-shadow: 0 5px 9px 1px #000;position: relative;z-index: 9999999;display: none;}*/
+.menu-down{margin-top: 60px; background: #00A0C6;height: 52px;box-shadow: 0 5px 9px 1px #000;position: absolute;z-index: 9999999;display: none;}
 .menu-down .navbar-brand{padding: 0;height: 48px;}
 .menu-down .navbar-brand img{top: 0;}
 .menu-down .navbar-nav > li > a{padding:11px;}
@@ -61,7 +62,7 @@ header{background-color: #00a0c6;}
 .menu-down .carousel-shadow{width: 100%;height: 1px;position: absolute;bottom: -1px;background: #66c6dd;}
 .menu-down .carousel-border{width: 100%;height: 3px;position: absolute;bottom: -4px;background: #46bad5;}
 /* фиксация меню */
-.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;display: block;opacity: 0.8;}
+.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;opacity: 0.8;}
 /* Услуги */
 
 .amenities{margin-top: 75px;text-align: center;}
