@@ -9,7 +9,7 @@ window.onload = function() { // после загрузки страницы
             scrollUp();
         };
         };
-        rrr = $('.menu-down').position();
+        rrr = $('.amenities').position();
         $(window).scroll(function(){    
           var docscroll=$(document).scrollTop();
           if(docscroll>rrr.top){
