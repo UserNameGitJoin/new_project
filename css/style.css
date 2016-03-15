@@ -61,7 +61,7 @@ header{background-color: #00a0c6;}
 .menu-down .carousel-shadow{width: 100%;height: 1px;position: absolute;bottom: -1px;background: #66c6dd;}
 .menu-down .carousel-border{width: 100%;height: 3px;position: absolute;bottom: -4px;background: #46bad5;}
 /* фиксация меню */
-.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;display: block;}
+.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;display: block;opacity: 0.8;}
 /* Услуги */
 
 .amenities{margin-top: 75px;text-align: center;}
