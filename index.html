@@ -400,41 +400,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>      
-        window.onload = function() { // после загрузки страницы
-        var scrollUp = document.getElementById('scrollup'); // найти элемент
-        scrollUp.onclick = function() { //обработка клика
-          // window.scrollTo(0,0);            
-            function scrollUp() {
-              window.scrollBy(0,-100); // чем меньше значение (цифра -10), тем выше скорость перемещения
-              if (window.pageYOffset > 0) {requestAnimationFrame(scrollUp);} // если значение прокрутки больше нуля, то функция повториться
-            }
-            scrollUp();
-        };
-        };
-        
-        
-        /* $('.scrol-contact').click(function () { 
-         elementClick = $(this).attr("href");
-         destination = $(elementClick).offset().top;
-         if($.browser.safari){
-           $('body').animate( { scrollTop: destination }, 11000 );
-         }else{
-           $('html').animate( { scrollTop: destination }, 11000 );
-         }
-         return false;
-       });*/
-        rrr = $('.menu-down').position();
-        $(window).scroll(function(){    
-          var docscroll=$(document).scrollTop();
-          if(docscroll>rrr.top){
-            $('.menu-down').css({'height': $('.menu-down').height(),'width': $('.menu-down').width()}).addClass('fixed');
-          }else{
-            $('.menu-down').removeClass('fixed');
-          }
-        });
-        
-    </script>
-    
+    <script src="js/scripts.js"></script>    
 </body>
 </html>
