@@ -64,7 +64,7 @@ header{background-color: #00a0c6;}
 .fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;display: block;}
 /* Услуги */
 
-.amenities{margin-top: 25px;text-align: center;}
+.amenities{margin-top: 75px;text-align: center;}
 .amenities h2{background: #000;text-transform: uppercase;text-align: center;color: #fff;margin: 0;border-bottom: 5px solid #00A0C6;font-size: 26px;height: 131px;display: table;width: 100%;line-height:1.5;}
 .amenities h2 span{display: table-cell;vertical-align: middle;}
 .amenities img{margin-top: 15px;margin-bottom: 15px; height: auto;}
