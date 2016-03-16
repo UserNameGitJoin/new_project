@@ -13,10 +13,10 @@
 body{font-family:UkrainianMonoCondensed;background: #F7F7F7;}
 /* шапка */
 
-header{background-color: #00a0c6;}
+header{background-color: #00a0c6;border-top: 5px solid #000;}
 /*меню */
-.menu{border: 0;padding:15px 0 10px;} /*border-bottom: 1px solid #6cc8dd*/
-.navbar-brand img{position: relative;top: -20px;}
+.menu{border: 0;padding:15px 0;margin-bottom:0;} /*border-bottom: 1px solid #6cc8dd*/
+.navbar-brand img{position: relative;top: -13px;}
 .navbar-default{background: transparent;}
 .navbar-default .navbar-nav > li > a{color: #fff;text-transform: uppercase;font-size: 18px;}
 .link-active{background: #00809E;}
