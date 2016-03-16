@@ -50,11 +50,11 @@ header{background-color: #00a0c6;}
 /* Основное меню */
 
 /*.menu-down{margin-top: 60px; background: #00A0C6;height: 52px;box-shadow: 0 5px 9px 1px #000;position: relative;z-index: 9999999;display: none;}*/
-.menu-down{margin-top: 60px; background: #00A0C6;height: 52px;box-shadow: 0 5px 9px 1px #000;position: absolute;z-index: 9999999;display: none;}
+.menu-down{margin-top: 60px; background: rgba(0, 160, 198, 0.8);height: 52px;box-shadow: 0 5px 9px 1px #000;position: absolute;z-index: 9999999;display: none;}
 .menu-down .navbar-brand{padding: 0;height: 48px;}
 .menu-down .navbar-brand img{top: 0;}
 .menu-down .navbar-nav > li > a{padding:11px;}
-.menu-down .navbar-nav > li{background:#00A0C6;}
+.menu-down .navbar-nav > li{background:rgba(0, 160, 198, 0);}
 .menu-down .navbar-nav > li.link-active{background: #00809e; }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{background: #00809e;color:#fff;}
 .menu-down .menu{padding: 5px 0;}
@@ -62,10 +62,10 @@ header{background-color: #00a0c6;}
 .menu-down .carousel-shadow{width: 100%;height: 1px;position: absolute;bottom: -1px;background: #66c6dd;}
 .menu-down .carousel-border{width: 100%;height: 3px;position: absolute;bottom: -4px;background: #46bad5;}
 /* фиксация меню */
-.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;opacity: 0.8;}
+.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;}
 /* Услуги */
 
-.amenities{margin-top: 75px;text-align: center;}
+.amenities{padding-top: 85px;text-align: center;}
 .amenities h2{background: #000;text-transform: uppercase;text-align: center;color: #fff;margin: 0;border-bottom: 5px solid #00A0C6;font-size: 26px;height: 131px;display: table;width: 100%;line-height:1.5;}
 .amenities h2 span{display: table-cell;vertical-align: middle;}
 .amenities img{margin-top: 15px;margin-bottom: 15px; height: auto;}
@@ -78,14 +78,14 @@ span.amenities-price{font-size: 14px;}
 
 /* о нас */
 
-.about-us{margin-top: 90px;}
+.about-us{padding-top: 90px;}
 .about-us h2{margin-bottom: 25px;}
 .about-us span{display: block;font-family:verdana;font-size: 12px;text-shadow: 0px 0px 1px #aaa;}
 .about-us-manager div:last-child{margin-top: 81px;}
 
 /* Портфолио */
 
-.portfolio{margin-top: 80px;}
+.portfolio{padding-top: 80px;}
 .portfolio .portfolio-img h2{margin-bottom: 30px;}
 .portfolio-text h2{color:#515151;font-family:verdana;}
 .portfolio-text span{display: block;font-family:verdana; font-size: 14px;font-style:italic;text-shadow: 0px 0px 1px #aaa;}
@@ -104,10 +104,13 @@ span.amenities-price{font-size: 14px;}
 .section-form form > div{padding-left: 0;}
 .section-form button{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 13px 0;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
 .section-form button:hover{background: #000;}
-.contact span {font-size: 24px;}
+.contact > div > div > div:last-child span {font-size: 24px;}
 .contact-img img{margin: 15px 5px}
 .contact-img img:first-child{margin-right: 45px;}
 .contact-img img:last-child{margin-right: 0;}
+form#formActiv div{position: relative}
+.input-group .form-control{z-index: 1;}
+.input-group .form-control:focus{z-index: 1}
 
 
 /* Скрол */
