@@ -11,9 +11,10 @@
 }
 
 body{font-family:UkrainianMonoCondensed;background: #F7F7F7; background-image: url(../img/fon.jpg);}
+h2,nav{font-family: 'Open Sans Condensed', sans-serif;}
 /* шапка */
 
-header{background-color: #00a0c6;border-top: 5px solid #000;}
+header{background-color: #00a0c6;border-top: 5px solid #000;font-family: 'Open Sans Condensed', sans-serif;}
 /*меню */
 .menu{border: 0;padding:15px 0;margin-bottom:0;} /*border-bottom: 1px solid #6cc8dd*/
 .navbar-brand img{position: relative;top: -13px;}
