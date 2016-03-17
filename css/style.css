@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-body{font-family:UkrainianMonoCondensed;background: #F7F7F7;}
+body{font-family:UkrainianMonoCondensed;background: #F7F7F7; background-image: url(../img/fon.jpg);}
 /* шапка */
 
 header{background-color: #00a0c6;border-top: 5px solid #000;}
@@ -62,7 +62,7 @@ header{background-color: #00a0c6;border-top: 5px solid #000;}
 .menu-down .carousel-shadow{width: 100%;height: 1px;position: absolute;bottom: -1px;background: #66c6dd;}
 .menu-down .carousel-border{width: 100%;height: 3px;position: absolute;bottom: -4px;background: #46bad5;}
 /* фиксация меню */
-.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;}
+.fixed{position: fixed;top:0;left: 0;z-index: 9999999;margin-top: 0;display: block;}
 /* Услуги */
 
 .amenities{padding-top: 85px;text-align: center;}
@@ -99,7 +99,8 @@ span.amenities-price{font-size: 14px;}
 
 /* Контакты */
 
-.contact{background-image: url(../img/bgcont.png);width: 100%;background-size: cover;background-position: center center;margin-top: 70px;padding-top: 13px;color:#fff;padding-bottom: 15px;}
+.contact{width: 100%;padding-top: 83px;color:#fff;padding-bottom: 15px;}
+.contact > div{background-image: url(../img/bgcont.png);width: 100%;background-size: cover;background-position: center center;}
 .contact h2{padding-bottom: 25px;}
 .section-form form > div{padding-left: 0;}
 .section-form button{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 13px 0;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
