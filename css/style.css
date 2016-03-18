@@ -44,7 +44,7 @@ header{background-color: #00a0c6;border-top: 5px solid #000;font-family: 'Open S
 .carousel-head{position: relative; border-top: 1px solid #51BDD7;}
 .carousel-head-text{position: absolute;width: 100%;z-index: 20;color:#fff;}
 .carousel-head-text h1{text-transform: uppercase;font-size: 24px;}
-.carousel-head-text h2{text-transform: uppercase;font-size: 20px;}
+.carousel-head-text h2{text-transform: uppercase;font-size: 20px;padding-right: 24px;}
 .carousel-head-text h2 span{display: inline-block;background: #fff;color:#27AECE;vertical-align: top;padding: 4px;font-size: 12px;border-radius: 5px;margin-right: 13px;}
 .carousel-head-text div:first-child h2{font-size: 24px; text-transform: none;}
 
@@ -74,7 +74,7 @@ header{background-color: #00a0c6;border-top: 5px solid #000;font-family: 'Open S
 .amenities-bg{background: #EFEFEF;}
 .amenities hr{border-color: #e0dedd;width: 60%;margin-bottom: 5px; }
 span.amenities-price{font-size: 14px;}
-.amenities a{background: #17A2C3;color: #fff;border-color:#17A2C3;text-transform: uppercase;font-size: 24px;margin: 13px 0;padding: 6px 30px;}
+.amenities a{background: #17A2C3;color: #fff;border-color:#17A2C3;text-transform: uppercase;font-size: 24px;margin: 13px 0;padding: 6px 30px;font-family: 'Open Sans Condensed', sans-serif;}
 .amenities a:hover{background: #000;}
 
 /* о нас */
@@ -106,7 +106,7 @@ span.amenities-price{font-size: 14px;}
 .section-form form > div{padding-left: 0;}
 .section-form button{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 13px 0;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
 .section-form button:hover{background: #000;}
-.contact > div > div > div:last-child span {font-size: 24px;}
+.contact > div > div > div > div:last-child span {font-size: 24px;font-family: 'Open Sans Condensed', sans-serif;}
 .contact-img img{margin: 15px 5px}
 .contact-img img:first-child{margin-right: 45px;}
 .contact-img img:last-child{margin-right: 0;}
@@ -140,6 +140,8 @@ form#formActiv div{position: relative}
     .portfolio-text h2{margin-top: 20px !important;}
     .contact div{text-align: left;}
     div.carousel-head-text , div.carousel-head-text div.text-md-center{text-align: center;}
+    .carousel-head-text h2{padding-right: 0;}
+    .menu-down .navbar-nav > li{background:rgba(0, 160, 198, 1);}
 }
 
 /* Small Devices, Tablets */

@@ -22,8 +22,29 @@ window.onload = function() { // после загрузки страницы
         });
 
 
- $("a[href^='#']").click(function(){
+ /*$("a[href^='#']").click(function(){
         $("html, body").stop().animate({
             scrollTop: $($(this).attr("href")).offset().top
-        }, 800);
-    });
+        }, 1000);
+    });*/
+
+$('.scrol-contact').click(function(){
+    var newId = $(this).attr('id');
+    newId = newId.split('-');
+    $('select option[value='+newId[1]+']').attr('selected', 'selected');
+});
+
+
+
+$("a[href^='#']").click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top /*- 50*/
+        }, 1000);
+        return false;
+      }
+    }
+});
