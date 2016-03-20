@@ -39,6 +39,9 @@ header{background-color: #00a0c6;border-top: 5px solid #000;font-family: 'Open S
 .carousel-indicat .carousel-indicators li.active{background: #fff;}
 .carousel-shadow{width: 100%;height: 1px;position: absolute;bottom: -1px;background: #7eb9c8;}
 .carousel-border{width: 100%;height: 6px;position: absolute;bottom: -7px;background: #82c1cf;}
+.carousel-caption h2{font-size: 24px;text-align: right;}
+.carousel-caption h1{font-size: 32px;text-align: center;color: #fff;background: #000;display: inline-block;padding: 22px 12px;margin-bottom: 0;}
+.carousel-caption{left: 0;right: 0;}
 
 /* слайдер текст сверху */
 
@@ -144,6 +147,8 @@ form#formActiv div{position: relative}
     div.carousel-head-text , div.carousel-head-text div.text-md-center{text-align: center;}
     .carousel-head-text h2{padding-right: 0;}
     .menu-down .navbar-nav > li{background:rgba(0, 160, 198, 1);}
+    .carousel-caption{bottom: 0;padding-bottom:0;}
+    .carousel-caption h2{text-align: center;}
 }
 
 /* Small Devices, Tablets */
