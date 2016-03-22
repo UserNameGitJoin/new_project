@@ -74,7 +74,7 @@ header{background-color: #00a0c6;border-top: 5px solid #000;font-family: 'Open S
 .amenities h2{background: #000;text-transform: uppercase;text-align: center;color: #fff;margin: 0;border-bottom: 5px solid #00A0C6;font-size: 26px;height: 131px;display: table;width: 100%;line-height:1.5;}
 .amenities h2 span{display: table-cell;vertical-align: middle;}
 .amenities img{margin-top: 15px;margin-bottom: 15px; height: auto;}
-.amenities .amenities-bg > span{display: block;font-family:verdanahandRegular; font-size: 12px;font-style:italic;text-shadow: 0px 0px 1px #aaa;}
+.amenities .amenities-bg > span{display: block;font-family:verdanahandRegular; font-size: 12px;/*font-style:italic;*/text-shadow: 0px 0px 1px #aaa;}
 .amenities-bg{background: #EFEFEF;}
 .amenities hr{border-color: #e0dedd;width: 60%;margin-bottom: 5px; }
 span.amenities-price{font-size: 14px;}
