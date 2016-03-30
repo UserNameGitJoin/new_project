@@ -21,20 +21,11 @@ window.onload = function() { // после загрузки страницы
           }
         });
 
-
- /*$("a[href^='#']").click(function(){
-        $("html, body").stop().animate({
-            scrollTop: $($(this).attr("href")).offset().top
-        }, 1000);
-    });*/
-
 $('.scrol-contact').click(function(){
     var newId = $(this).attr('id');
     newId = newId.split('-');
     $('select option[value='+newId[1]+']').attr('selected', 'selected');
 });
-
-
 
 $("a[href^='#']").click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -48,3 +39,41 @@ $("a[href^='#']").click(function() {
       }
     }
 });
+
+
+
+$('#formActiv').validator().on('submit', function (e) {
+  if (e.isDefaultPrevented()) {
+    
+  } else {
+    e.preventDefault();
+    $.ajax({
+		type:"POST",
+		url: "send.php",
+		data:{elements:$('#formActiv').serialize()},
+        beforeSend:function(){ 
+            $('#form-sub').append('<img class="ajax-send" src="../img/9.gif">');
+            $('#formActiv button').css({display:'none'});
+		},
+		success:function(res){
+			setTimeout(function(){
+                if(res == 'true'){
+                    $('#formActiv img').css({display:'none'});
+                    $('#formActiv button').css({display:'inline-block'});
+                    $('#formActiv').trigger("reset");
+                    $('#formActiv').validator('destroy');
+                    $('#formActiv').validator();
+                    $('#form-sub').append('<h2 class="col-md-6 text-left" style=" padding-top: 0;margin-top: 13px">Письмо успешно отправлено</h2>');
+                }else{
+                     $('#formActiv img').css({display:'none'});
+                    $('#formActiv button').css({display:'inline-block'});
+                     $('#form-sub').append('<h2 class="col-md-6 text-left" style=" padding-top: 0;margin-top: 13px">Ошибка</h2>');
+                }
+            }, 1000);
+		},
+		error:function(){
+			alert('Ошибка!');
+		}
+	});
+  }
+})

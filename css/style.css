@@ -1,16 +1,5 @@
-/*@font-face {
-    font-family: 'UkrainianMyslBoldItalic'; /* Гарнитура шрифта */
-  /*  src: url('../fonts/UkrainianMyslBoldItalic.ttf'); /* Путь к файлу со шрифтом */
-/*}
-*/
-@font-face {
-  font-family: 'UkrainianMonoCondensed';
-  src: url('UkrainianMonoCondensed.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
-body{font-family:UkrainianMonoCondensed;background: #F7F7F7; background-image: url(../img/fon.jpg);}
+body{background: #F7F7F7; background-image: url(../img/fon.jpg);}
 h2,nav{font-family: 'Open Sans Condensed', sans-serif;}
 /* шапка */
 
@@ -108,6 +97,7 @@ span.amenities-price{font-size: 14px;}
 .contact > div{background-image: url(../img/bgcont.png);width: 100%;background-size: cover;background-position: center center;}
 .contact h2{padding-bottom: 25px;}
 .section-form form > div{padding-left: 0;}
+.section-form {position: relative;}
 .section-form button{background: #17A2C3;color: #fff;border-color:#17A2C3;font-size: 14px;margin: 13px 0;padding: 6px 10px 8px;font-style:italic;font-family:verdana;}
 .section-form button:hover{background: #000;}
 .contact > div > div > div > div:last-child span {font-size: 24px;font-family: 'Open Sans Condensed', sans-serif;}
@@ -115,9 +105,10 @@ span.amenities-price{font-size: 14px;}
 .contact-img img{margin: 15px 5px}
 .contact-img img:first-child{margin-right: 45px;}
 .contact-img img:last-child{margin-right: 0;}
-form#formActiv div{position: relative}
+form#formActiv div{position: relative;/*-webkit-filter: blur(5px);-moz-filter: blur(5px);filter: blur(0px);*/}
 .input-group .form-control{z-index: 1;}
-.input-group .form-control:focus{z-index: 1}
+.input-group .form-control:focus{z-index: 1;}
+.ajax-send{width: 35px;height: 35px;}
 
 
 /* Скрол */
